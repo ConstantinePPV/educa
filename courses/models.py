@@ -40,7 +40,7 @@ class Module(models.Model):
                                related_name='modules',
                                on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
-    descripion = models.TextField(blank=True)
+    description = models.TextField(blank=True)
     order = OrderField(blank=True, for_fields=['course'])
 
     class Meta:
